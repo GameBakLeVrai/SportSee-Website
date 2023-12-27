@@ -1,0 +1,19 @@
+.navbar {
+    &__top {
+        padding: 0 35px;
+
+        @include flexbox($justify: space-between, $align: center);
+        height: 91px;
+        background: black;
+
+        a {
+            @include text($fontSize: 24px, $fontWeight: 500);
+            color: white;
+        }
+
+        img {
+            width: 178px;
+            height: 60px;
+        }
+    }
+}

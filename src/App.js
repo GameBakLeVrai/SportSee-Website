@@ -1,6 +1,10 @@
+import Navbar_top from "./components/Layouts/Navbar_top";
+
 function App() {
 	return (
-		<div className="App"></div>
+		<div className="App">
+			<Navbar_top />
+		</div>
 	);
 }
 
