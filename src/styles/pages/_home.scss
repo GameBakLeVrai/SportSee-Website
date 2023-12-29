@@ -1,0 +1,27 @@
+.home {
+    main {
+        @include flexbox();
+
+        .home__content {
+            padding: 50px;
+
+            @include flexbox($direction: column);
+
+            .home__header-text {
+                h1 {
+                    @include text($fontSize: 48px, $fontWeight: 500);
+
+                    span {
+                        color: $red-1;
+                    }
+                }
+
+                p {
+                    margin-top: 20px;
+                    @include text($fontSize: 18px, $fontWeight: 400);
+                }
+            }
+            
+        }
+    }
+}
