@@ -1,6 +1,7 @@
 .navbar {
     &__top {
         padding: 0 35px;
+        box-shadow: 0px 4px 4px 0px #00000040;
 
         @include flexbox($justify: space-between, $align: center);
         height: 91px;
