@@ -1,6 +1,6 @@
 import Logo from "../../images/logo.png";
 
-const Navbar_top = () => {
+const NavbarTop = () => {
 	return (
 		<nav className="navbar__top">
 			<img src={Logo} alt="logo" />
@@ -13,4 +13,4 @@ const Navbar_top = () => {
 	);
 };
 
-export default Navbar_top;
+export default NavbarTop;

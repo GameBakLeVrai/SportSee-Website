@@ -3,7 +3,7 @@ import Natation from "../../images/icons/swimming.png";
 import Velo from "../../images/icons/bicycle.png";
 import Haltere from "../../images/icons/dumbbell.png";
 
-const Navbar_vertical = () => {
+const NavbarVertical = () => {
 	return (
 		<nav className="navbar__vertical">
 			<ul>
@@ -29,4 +29,4 @@ const Navbar_vertical = () => {
 	);
 };
 
-export default Navbar_vertical;
+export default NavbarVertical;
