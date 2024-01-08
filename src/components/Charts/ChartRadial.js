@@ -32,7 +32,7 @@ const ChartRadial = () => {
 			barSize={10}
 			className="radialChart"
 			startAngle={90} 
-            endAngle={data[0].value}
+			endAngle={data[0].value}
 			backgroundColor="#fff"
 		>
 			<text x="30" y="45" fontSize={18} fontWeight={500}>Score</text>
