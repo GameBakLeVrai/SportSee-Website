@@ -5,7 +5,7 @@
         @include flexbox();
 
         .home__content {
-            padding: 50px;
+            padding: 50px 50px 0;
             width: 100%;
 
             @include flexbox($direction: column);
@@ -27,7 +27,7 @@
             
             .home__charts-container {
                 margin-top: 55px;
-                @include flexbox($gap: 20px);
+                @include flexbox($direction: column, $gap: 20px);
             }
         }
     }
