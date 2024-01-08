@@ -11,7 +11,7 @@ export const getUser = async (id) => {
     return res.data.data;
 }
 
-export const getActivity = async (id, daily) => {
+export const getActivity = async (id) => {
     const res = await axios.get(`${process.env.REACT_APP_API_URL}/user/${id}/activity`, config);
     return res.data.data;
 }

@@ -1,0 +1,49 @@
+.stats__card {
+    padding: 15px 25px;
+
+    width: 258px;
+    height: 124px;
+
+    @include flexbox($align: center, $gap: 20px);
+
+    background: $card-bg;
+    border-radius: 5px;
+
+    .stats__text-container {
+        @include flexbox($direction: column, $gap: 5px);
+
+        .stats__text {
+            @include text($fontSize: 20px, $fontWeight: 700);
+            color: $grey-1;
+        }
+
+        .stats__subtext {
+            @include text($fontSize: 14px, $fontWeight: 500);
+            color: $grey-3;
+        }
+    }
+
+    .statsimg__0 {
+        padding: 20px;
+        background: rgba(255, 0, 0, 0.171);
+        border-radius: 5px;
+    }
+
+    .statsimg__1 {
+        padding: 20px;
+        background: #4ab7ff1e;
+        border-radius: 5px;
+    }
+
+    .statsimg__2 {
+        padding: 20px;
+        background: #fdcd0c36;
+        border-radius: 5px;
+    }
+
+    .statsimg__3 {
+        padding: 20px;
+        background: #fd51822a;
+        border-radius: 5px;
+    }
+}

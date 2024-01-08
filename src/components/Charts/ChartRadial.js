@@ -10,7 +10,10 @@ const ChartRadial = () => {
 		if (data.length === 0) {
 			(async () => {
 				const res = await getUser(12);
-				setData(prevData => [...prevData, { value: ((res.todayScore || res.score) * 100)+100 }]);
+				const userScore = ((res.todayScore || res.score) * 100) + 100;
+
+				setData(prevData => [...prevData, { value: userScore }]);
+				console.log("userScore :", userScore-100);
 			})();
 		}
 	});

@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-
 import { getUser } from "../api";
+
 import ChartBar from "../components/Charts/ChartBar";
 import ChartRadar from "../components/Charts/ChartRadar";
 import ChartRadial from "../components/Charts/ChartRadial";
+import StatsBar from "../components/StatsBar";
 
 const Home = () => {
 	const [data, setData] = useState(null);
@@ -28,14 +29,20 @@ const Home = () => {
 						<p>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
 					</div>
 
-					<div className="home__charts-container">
-						<ChartBar />
+					<div className="home__charts-stats_container">
+						<div className="home__charts-container">
+							<ChartBar />
 
-						<div className="home__charts-sub_container">
-							<ChartRadar />
-							<ChartRadial />
+							<div className="home__charts-sub_container">
+								<ChartRadar />
+								<ChartRadial />
+							</div>
 						</div>
-					</div>
+
+						<div className="home__charts-stats">
+							<StatsBar />
+						</div>
+					</div>					
 				</div>
 			</main>
 		</div>
