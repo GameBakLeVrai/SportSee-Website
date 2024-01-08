@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getUser } from "../api";
-
-import NavbarTop from "../components/Layouts/NavbarTop";
-import NavbarVertical from "../components/Layouts/NavbarVertical";
+import ChartBar from "../components/Charts/ChartBar";
 
 const Home = () => {
 	const [data, setData] = useState(null);
@@ -21,18 +19,20 @@ const Home = () => {
 
 	return (
 		<div className="home">
-			<NavbarTop />
-
 			<main>
-				<NavbarVertical />
-
 				<div className="home__content">
 					<div className="home__header-text">
 						<h1>Bonjour <span>{data.userInfos.firstName}</span></h1>
 						<p>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
 					</div>
 
-					
+					<div className="home__charts-container">
+						<ChartBar />
+
+						<div>
+							
+						</div>
+					</div>
 				</div>
 			</main>
 		</div>

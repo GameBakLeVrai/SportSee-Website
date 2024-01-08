@@ -1,6 +1,9 @@
 .navbar {
     &__top {
+        position: relative;
         padding: 0 35px;
+        
+        z-index: 1;        
         box-shadow: 0px 4px 4px 0px #00000040;
 
         @include flexbox($justify: space-between, $align: center);
@@ -19,8 +22,12 @@
     }
 
     &__vertical {
+        position: fixed;
+        top: 0;
+        padding-top: 91px;
+        
         width: 117px;
-        height: calc(100vh - 91px);
+        height: 100%;
 
         @include flexbox($direction: column, $justify: center);
         background: black;

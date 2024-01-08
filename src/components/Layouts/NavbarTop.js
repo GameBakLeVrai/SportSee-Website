@@ -7,7 +7,7 @@ const NavbarTop = () => {
 
 			<a href="/accueil">Accueil</a>
 			<a href="/profil">Profil</a>
-			<a href="/regagles">Réglages</a>
+			<a href="/reglages">Réglages</a>
 			<a href="/communaute">Communauté</a>
 		</nav>
 	);
