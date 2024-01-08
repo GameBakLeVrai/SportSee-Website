@@ -23,27 +23,24 @@
         }
     }
 
-    .statsimg__0 {
+    img {
         padding: 20px;
-        background: rgba(255, 0, 0, 0.171);
         border-radius: 5px;
+    }
+
+    .statsimg__0 {
+        background: rgba(255, 0, 0, 0.171);
     }
 
     .statsimg__1 {
-        padding: 20px;
         background: #4ab7ff1e;
-        border-radius: 5px;
     }
 
     .statsimg__2 {
-        padding: 20px;
         background: #fdcd0c36;
-        border-radius: 5px;
     }
 
     .statsimg__3 {
-        padding: 20px;
         background: #fd51822a;
-        border-radius: 5px;
     }
 }
