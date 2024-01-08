@@ -49,38 +49,37 @@ const ChartBar = () => {
 	};
 
 	return (
-		<>
-			<h3 className="barchart-title">Activité quotidienne</h3>
-			<BarChart
-				width={835}
-				height={320}
-				data={data}
-				className="barchart"
-			>
-				<CartesianGrid strokeDasharray="3 3" vertical={false} axisLine={false} />
+		<BarChart
+			width={835}
+			height={320}
+			data={data}
+			className="barchart"
+		>
+			<text x="10" y="30" fontSize={15} fontWeight={500} color="#20253A">Activité quotidienne</text>
 
-				<XAxis tickLine={false} tickMargin={"10"}  />
-				<YAxis orientation="right" tickLine={false} axisLine={false} tickMargin={"10"} />
+			<CartesianGrid strokeDasharray="3 3" vertical={false} axisLine={false} />
 
-				<Tooltip  content={<CustomTooltip />} />
+			<XAxis tickLine={false} tickMargin={"10"}  />
+			<YAxis orientation="right" tickLine={false} axisLine={false} tickMargin={"10"} />
 
-				<Legend
-					verticalAlign="top"
-					align="right"
-					height={64}
-					iconType="circle"
-					iconSize={8}
-					formatter={(value) => (
-						<span className="legend">
-							{displayLegend(value)} ({value})
-						</span>
-					)}
-				/>
+			<Tooltip  content={<CustomTooltip />} />
 
-				<Bar dataKey="kilogram" name="kg" fill="#282D30" radius={[10, 10, 0, 0]} barSize={7} />
-				<Bar dataKey="calories" name="kCal" fill="#E60000" radius={[10, 10, 0, 0]} barSize={7} />
-			</BarChart>
-		</>
+			<Legend
+				verticalAlign="top"
+				align="right"
+				height={64}
+				iconType="circle"
+				iconSize={8}
+				formatter={(value) => (
+					<span className="legend">
+						{displayLegend(value)} ({value})
+					</span>
+				)}
+			/>
+
+			<Bar dataKey="kilogram" name="kg" fill="#282D30" radius={[10, 10, 0, 0]} barSize={7} />
+			<Bar dataKey="calories" name="kCal" fill="#E60000" radius={[10, 10, 0, 0]} barSize={7} />
+		</BarChart>
 	);
 };
 

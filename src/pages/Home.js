@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getUser } from "../api";
 import ChartBar from "../components/Charts/ChartBar";
 import ChartRadar from "../components/Charts/ChartRadar";
+import ChartRadial from "../components/Charts/ChartRadial";
 
 const Home = () => {
 	const [data, setData] = useState(null);
@@ -30,8 +31,9 @@ const Home = () => {
 					<div className="home__charts-container">
 						<ChartBar />
 
-						<div>
+						<div className="home__charts-sub_container">
 							<ChartRadar />
+							<ChartRadial />
 						</div>
 					</div>
 				</div>

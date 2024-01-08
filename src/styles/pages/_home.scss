@@ -28,6 +28,10 @@
             .home__charts-container {
                 margin-top: 55px;
                 @include flexbox($direction: column, $gap: 20px);
+
+                .home__charts-sub_container {
+                    @include flexbox($gap: 20px);
+                }
             }
         }
     }
