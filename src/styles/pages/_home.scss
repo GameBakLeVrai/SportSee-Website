@@ -2,11 +2,10 @@
     margin-left: 117px;
     
     main {
-        @include flexbox();
+        @include flexbox($justify: center);
 
         .home__content {
-            padding: 50px 50px 0;
-            width: 100%;
+            padding: 40px 50px 0;            
 
             @include flexbox($direction: column);
 
@@ -36,12 +35,7 @@
                         @include flexbox($gap: 20px);
                     }
                 }
-
-                .home__charts-stats {
-
-                }
             }
-            
         }
     }
 }

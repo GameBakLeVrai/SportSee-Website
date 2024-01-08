@@ -4,7 +4,7 @@ import { getUser } from "../api";
 import ChartBar from "../components/Charts/ChartBar";
 import ChartRadar from "../components/Charts/ChartRadar";
 import ChartRadial from "../components/Charts/ChartRadial";
-import StatsBar from "../components/StatsBar";
+import StatsBar from "../components/Stats/StatsBar";
 
 const Home = () => {
 	const [data, setData] = useState(null);

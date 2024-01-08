@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { getUser } from "../api";
+import { getUser } from "../../api";
 
 import StatsCard from "./StatsCard";
 
-import Fire from "../images/icons/fire.png";
-import Chicken from "../images/icons/chicken.png";
-import Apple from "../images/icons/apple.png";
-import Burger from "../images/icons/cheeseburger.png";
+import Fire from "../../images/icons/fire.png";
+import Chicken from "../../images/icons/chicken.png";
+import Apple from "../../images/icons/apple.png";
+import Burger from "../../images/icons/cheeseburger.png";
 
 const StatsBar = () => {
 	const [data, setData] = useState([]);
