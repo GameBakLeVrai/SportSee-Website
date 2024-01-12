@@ -59,7 +59,7 @@ const ChartBar = () => {
 
 			<CartesianGrid strokeDasharray="3 3" vertical={false} axisLine={false} />
 
-			<XAxis tickLine={false} tickMargin={"10"}  />
+			<XAxis tickLine={false} tickMargin={"10"} tickFormatter={(value) => value+1}  />
 			<YAxis orientation="right" tickLine={false} axisLine={false} tickMargin={"10"} />
 
 			<Tooltip  content={<CustomTooltip />} />
