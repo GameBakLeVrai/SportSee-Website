@@ -24,13 +24,13 @@ const CustomTooltip = ({ active, payload }) => {
 	}
 };
 
-const ChartBar = () => {
+const ChartBar = ({ id }) => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		if (data.length === 0) {
 			(async () => {
-				const res = await getActivity(12);
+				const res = await getActivity(id);
 				setData(res.sessions);
 				console.log("Sessions :", res.sessions);
 			})();

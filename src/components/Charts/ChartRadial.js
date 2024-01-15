@@ -3,13 +3,13 @@ import { RadialBarChart, RadialBar } from "recharts";
 
 import { getUser } from "../../api";
 
-const ChartRadial = () => {
+const ChartRadial = ({ id }) => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		if (data.length === 0) {
 			(async () => {
-				const res = await getUser(12);
+				const res = await getUser(id);
 				const userScore = ((res.todayScore || res.score) * 100) + 100;
 
 				setData(prevData => [...prevData, { value: userScore }]);

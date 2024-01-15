@@ -8,13 +8,13 @@ import Chicken from "../../images/icons/chicken.png";
 import Apple from "../../images/icons/apple.png";
 import Burger from "../../images/icons/cheeseburger.png";
 
-const StatsBar = () => {
+const StatsBar = ({ id }) => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		if (data.length === 0) {
 			(async () => {
-				const res = await getUser(12);
+				const res = await getUser(id);
 				setData(res.keyData);
 				console.log("StatsBar :", res.keyData);
 			})();

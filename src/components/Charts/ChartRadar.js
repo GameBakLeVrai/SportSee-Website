@@ -9,13 +9,13 @@ import {
 	PolarRadiusAxis,
 } from "recharts";
 
-const ChartRadar = () => {
+const ChartRadar = ({ id }) => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		if (data.length === 0) {
 			(async () => {
-				const res = await getPerformance(12);
+				const res = await getPerformance(id);
 				setData(res.data);
 				console.log("Performance :", res.data);
 			})();

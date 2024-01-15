@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Logo from "../../images/logo.png";
 
 const NavbarTop = () => {
@@ -5,10 +7,10 @@ const NavbarTop = () => {
 		<nav className="navbar__top">
 			<img src={Logo} alt="logo" />
 
-			<a href="/accueil">Accueil</a>
-			<a href="/profil">Profil</a>
-			<a href="/reglages">Réglages</a>
-			<a href="/communaute">Communauté</a>
+			<Link to="/accueil">Accueil</Link>
+			<Link to="/profil">Profil</Link>
+			<Link to="/reglages">Réglages</Link>
+			<Link to="/communaute">Communauté</Link>
 		</nav>
 	);
 };

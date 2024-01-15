@@ -17,13 +17,13 @@ function CustomTooltip({ active, payload }) {
 	);
 }
 
-const ChartLine = () => {
+const ChartLine = ({ id }) => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		if (data.length === 0) {
 			(async () => {
-				const res = await getSessions(12, true);
+				const res = await getSessions(id, true);
 				setData(res.sessions);
 				console.log("ChartLine :", res.sessions);
 			})();
