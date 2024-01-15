@@ -9,7 +9,7 @@
 
     &-title {
         position: absolute;
-        top: 20px;
+        top: 25px;
         left: 20px;
 
         @include text($fontSize: 15px, $fontWeight: 500);

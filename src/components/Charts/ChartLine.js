@@ -44,9 +44,19 @@ const ChartLine = () => {
 					<XAxis dataKey='day' tick={{ fill: 'white', fontSize: '15px', fontWeight: '500', opacity: 0.65 }} axisLine={false} tickLine={false} />
 					<YAxis dataKey='sessionLength' domain={['dataMin - 20', 'dataMax + 5']} hide={true} />
 
-					<Tooltip content={<CustomTooltip />} />
+					<Tooltip content={<CustomTooltip />} cursor={false} />
 
-					<Line type='natural' dataKey='sessionLength' stroke='white' strokeWidth={3} dot={false} />
+					<Line type='natural' dataKey='sessionLength' stroke="url(#gradiantline)" strokeWidth={3} dot={false} activeDot={{ fill: "white" }} />
+
+					<defs>
+						<linearGradient x1="0%" x2="100%" id="gradiantline">
+							<stop offset="0%" stopColor="rgba(255, 255, 255, 0.3)" />
+							<stop offset="10%" stopColor="rgba(255, 255, 255, 0.4)" />
+							<stop offset="20%" stopColor="rgba(255, 255, 255, 0.5)" />
+							<stop offset="30%" stopColor="rgba(255, 255, 255, 0.6)" />
+							<stop offset="50%" stopColor="rgba(255, 255, 255, 1)" />
+						</linearGradient>
+					</defs>
 				</LineChart>
 			</div>
 
