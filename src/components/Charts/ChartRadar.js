@@ -34,7 +34,7 @@ const ChartRadar = () => {
 		>
 			<PolarGrid />
 
-			<PolarAngleAxis dataKey="kind" tick={{ fill:"#ffffff", fontSize: "12" }} />
+			<PolarAngleAxis dataKey="kind" tick={{ fill:"white", fontSize: "12" }} />
 			<PolarRadiusAxis axisLine={false} tick={false} />
 
 			<Radar name="Mike" dataKey="value" fill="#FF0101" fillOpacity={0.7} />

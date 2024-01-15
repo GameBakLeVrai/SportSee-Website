@@ -5,6 +5,7 @@ import ChartBar from "../components/Charts/ChartBar";
 import ChartRadar from "../components/Charts/ChartRadar";
 import ChartRadial from "../components/Charts/ChartRadial";
 import StatsBar from "../components/Stats/StatsBar";
+import ChartLine from "../components/Charts/ChartLine";
 
 const Home = () => {
 	const [data, setData] = useState(null);
@@ -34,6 +35,7 @@ const Home = () => {
 							<ChartBar />
 
 							<div className="home__charts-sub_container">
+								<ChartLine />
 								<ChartRadar />
 								<ChartRadial />
 							</div>

@@ -42,7 +42,7 @@ const ChartRadial = () => {
 				<tspan x="125" y="120" fontSize={30} fill={'#282D30'}>{data[0].value-100} %</tspan>
 				<tspan x="118" y="150" fill={'#74798c'}>de votre</tspan>
 				<tspan x="120" y="175" fill={'#74798c'}>objectif</tspan>
-			</text>				
+			</text>
 		</RadialBarChart>
 	);
 };

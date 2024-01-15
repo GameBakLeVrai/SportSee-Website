@@ -50,7 +50,7 @@ const ChartBar = () => {
 
 	return (
 		<BarChart
-			width={835}
+			width={950}
 			height={320}
 			data={data}
 			className="barchart"

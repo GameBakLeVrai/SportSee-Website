@@ -16,8 +16,18 @@ export const getActivity = async (id) => {
     return res.data.data;
 }
 
-export const getSessions = async (id) => {
+export const getSessions = async (id, namebyday) => {
     const res = await axios.get(`${process.env.REACT_APP_API_URL}/user/${id}/average-sessions`, config);
+
+    if(namebyday) {
+        const days = ["L", "M", "M", "J", "V", "S", "D"];
+
+        if(res.data.data.sessions) res.data.data.sessions.forEach((d, index) => {
+            const { day } = d;
+            res.data.data.sessions[index].day = days[day-1];
+        });
+    }
+
     return res.data.data;
 }
 
