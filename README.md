@@ -1,3 +1,13 @@
+# SportSee - Website
+
+SportSee, a platform dedicated to online sports coaching and performance monitoring. 
+
+## Background of Project
+
+- You work as a developer at SportSee, a startup dedicated to sports coaching. Today, the company is launching a new version of its user profile page. This page will enable the user to track the number of sessions completed, as well as the number of calories burned.
+
+---
+
 # BackEnd - Repository
 
 > https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
